@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Юрий Фролов — геймдизайнер</title>
+<meta name="description" content="Юрий Фролов — геймдизайнер, композитор, медиахудожник. Карточный рогалик «Пульс: Карты Очага», 3D-игра «Пепел», Foundsound, интерактивные инсталляции.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Юрий Фролов — геймдизайнер">
+<meta property="og:description" content="«Пульс: Карты Очага», «Пепел», Foundsound, интерактивные инсталляции, музыка.">
+<meta property="og:image" content="assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="assets/fonts/cormorant-garamond-cyrillic-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* ---------- шрифты (SIL OFL, лежат в assets/fonts) ---------- */
+@font-face{font-family:"Cormorant";font-style:normal;font-weight:500;font-display:swap;src:url(assets/fonts/cormorant-garamond-cyrillic-500-normal.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:"Cormorant";font-style:normal;font-weight:500;font-display:swap;src:url(assets/fonts/cormorant-garamond-latin-500-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Cormorant";font-style:normal;font-weight:600;font-display:swap;src:url(assets/fonts/cormorant-garamond-cyrillic-600-normal.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:"Cormorant";font-style:normal;font-weight:600;font-display:swap;src:url(assets/fonts/cormorant-garamond-latin-600-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Cormorant";font-style:italic;font-weight:500;font-display:swap;src:url(assets/fonts/cormorant-garamond-cyrillic-500-italic.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:"Cormorant";font-style:italic;font-weight:500;font-display:swap;src:url(assets/fonts/cormorant-garamond-latin-500-italic.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Plex";font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/ibm-plex-sans-cyrillic-400-normal.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:"Plex";font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/ibm-plex-sans-latin-400-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Plex";font-style:normal;font-weight:500;font-display:swap;src:url(assets/fonts/ibm-plex-sans-cyrillic-500-normal.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:"Plex";font-style:normal;font-weight:500;font-display:swap;src:url(assets/fonts/ibm-plex-sans-latin-500-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"PlexMono";font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/ibm-plex-mono-cyrillic-400-normal.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:"PlexMono";font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/ibm-plex-mono-latin-400-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
+/* ---------- система ---------- */
+:root{
+  --paper:#eeeae2; --paper-2:#e6e1d6; --ink:#151310; --soft:#3b3630; --mute:#6c655a;
+  --rule:rgba(21,19,16,.16); --rule-2:rgba(21,19,16,.32); --amber:#c8871a;
+  --serif:"Cormorant","Iowan Old Style",Georgia,serif;
+  --sans:"Plex",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"PlexMono",ui-monospace,Menlo,monospace;
+  --gut:clamp(18px,3.4vw,48px);
+  --max:1360px;
+}
+*{box-sizing:border-box}
+html{background:var(--paper);scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.6 var(--sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+::selection{background:var(--ink);color:var(--paper)}
+img,video{display:block;width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+.mono{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase}
+.mute{color:var(--mute)}
+.ulink{background:linear-gradient(var(--amber),var(--amber)) 0 100%/0 1px no-repeat;transition:background-size .35s ease;padding-bottom:2px}
+.ulink:hover{background-size:100% 1px}
+.arrow{display:inline-block;transition:transform .3s ease}
+a:hover .arrow{transform:translate(3px,-3px)}
+
+/* ---------- верхняя строка ---------- */
+.bar{position:sticky;top:0;z-index:30;background:rgba(238,234,226,.9);backdrop-filter:saturate(1.2) blur(8px);-webkit-backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid var(--rule)}
+.bar .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:54px;gap:20px}
+.bar .name{font-family:var(--serif);font-style:italic;font-weight:500;font-size:20px;letter-spacing:.01em}
+.bar nav{display:flex;gap:22px}
+.bar nav a{color:var(--soft)}
+.bar nav a:hover{color:var(--ink)}
+.bar .mail{justify-self:end}
+@media (max-width:900px){.bar nav{display:none}.bar .wrap{grid-template-columns:1fr auto}}
+
+/* ---------- обложка ---------- */
+.cover{padding-top:clamp(40px,7vw,96px)}
+.cover .meta{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;border-top:1px solid var(--ink);padding-top:12px}
+.cover .meta div{color:var(--soft)}
+.cover .meta b{display:block;font-weight:400;color:var(--mute);margin-bottom:2px}
+h1{font-family:var(--serif);font-weight:600;font-size:clamp(64px,15.4vw,232px);line-height:.84;letter-spacing:-.035em;margin:clamp(26px,4vw,56px) 0 0;text-wrap:balance}
+h1 em{font-style:italic;font-weight:500;letter-spacing:-.04em}
+.cover .row{display:grid;grid-template-columns:1.2fr 1fr;gap:var(--gut);align-items:end;margin-top:clamp(28px,4vw,52px)}
+.cover .lede{font-family:var(--serif);font-size:clamp(22px,2.4vw,32px);line-height:1.22;max-width:24ch;margin:0;color:var(--soft)}
+.cover .lede em{color:var(--ink)}
+.cta{justify-self:end;display:flex;gap:26px;align-items:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:14px;background:var(--ink);color:var(--paper);padding:17px 24px 16px;font:500 14px/1 var(--sans);letter-spacing:.02em;transition:background .25s ease}
+.btn:hover{background:#000}
+.btn .dot{width:8px;height:8px;border-radius:50%;background:var(--amber);box-shadow:0 0 0 0 rgba(200,135,26,.6);animation:pulse 2.2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(200,135,26,.55)}70%{box-shadow:0 0 0 10px rgba(200,135,26,0)}100%{box-shadow:0 0 0 0 rgba(200,135,26,0)}}
+.cover-shot{margin-top:clamp(36px,5vw,72px)}
+@media (max-width:760px){.cover .meta{grid-template-columns:1fr 1fr;row-gap:14px}.cover .row{grid-template-columns:1fr}.cta{justify-self:start}}
+
+/* ---------- иллюстрации ---------- */
+figure{margin:0;position:relative}
+figure[hidden]{display:none}
+.frame{background:#0d0c0a;overflow:hidden}
+.frame img,.frame video{transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+figure:hover .frame img{transform:scale(1.015)}
+figcaption{display:flex;justify-content:space-between;gap:16px;padding-top:9px;color:var(--mute)}
+figcaption .t{color:var(--soft)}
+
+.diptych{display:grid;grid-template-columns:8fr 4fr;gap:clamp(12px,1.6vw,22px);margin-top:clamp(36px,5vw,72px);align-items:start}
+.diptych .frame{height:clamp(300px,40vw,600px)}
+.diptych img{height:100%;object-fit:cover}
+.d-side img{object-position:50% 0}
+@media (max-width:760px){.diptych{grid-template-columns:1fr}.d-side .frame{height:520px}}
+/* ---------- оглавление ---------- */
+.toc{margin-top:clamp(70px,10vw,140px)}
+.toc h2{font-family:var(--mono);font-weight:400;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);margin:0 0 10px}
+.toc ol{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink)}
+.toc li a{display:grid;grid-template-columns:60px 1fr 1fr 90px 24px;align-items:baseline;gap:16px;padding:16px 0 14px;border-bottom:1px solid var(--rule);transition:padding .35s ease,background .35s ease}
+.toc li a:hover{padding-left:12px;background:var(--paper-2)}
+.toc .ti{font-family:var(--serif);font-size:clamp(24px,3vw,38px);font-weight:500;line-height:1.05}
+.toc .ty{color:var(--soft)}
+@media (max-width:760px){.toc li a{grid-template-columns:36px 1fr 24px}.toc .ty,.toc .yr{display:none}}
+
+/* ---------- проекты ---------- */
+.proj{margin-top:clamp(90px,13vw,190px);display:grid;grid-template-columns:minmax(260px,4fr) 8fr;gap:var(--gut);align-items:start}
+.proj .side{position:sticky;top:84px}
+.proj .no{display:flex;justify-content:space-between;border-top:1px solid var(--ink);padding-top:10px;margin-bottom:22px}
+.proj h3{font-family:var(--serif);font-weight:600;font-size:clamp(40px,5.2vw,78px);line-height:.92;letter-spacing:-.025em;margin:0 0 20px}
+.proj h3 em{font-weight:500;font-style:italic}
+.proj p{margin:0 0 18px;max-width:42ch;color:var(--soft)}
+.specs{margin:22px 0 0;border-top:1px solid var(--rule)}
+.specs div{display:grid;grid-template-columns:96px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid var(--rule);font-size:14px}
+.specs dt{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);padding-top:2px}
+.specs dd{margin:0}
+.go{display:flex;flex-direction:column;gap:10px;margin-top:24px;font-weight:500}
+.go a{display:inline-flex;gap:8px;align-self:flex-start}
+.plates{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(12px,1.6vw,22px);align-items:start}
+.plates > *{grid-column:span 12}
+.p6{grid-column:span 6!important}.p7{grid-column:span 7!important}.p5{grid-column:span 5!important}.p8{grid-column:span 8!important}.p4{grid-column:span 4!important}
+.off{margin-top:clamp(40px,6vw,96px)}
+@media (max-width:900px){.proj{grid-template-columns:1fr}.proj .side{position:static}}
+@media (max-width:620px){.p6,.p7,.p5,.p8,.p4{grid-column:span 12!important}.off{margin-top:0}}
+
+/* ---------- цитата-разделитель ---------- */
+.interlude{margin-top:clamp(100px,14vw,200px);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);padding:clamp(28px,4vw,52px) 0}
+.interlude p{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(28px,4vw,56px);line-height:1.08;margin:0;max-width:22ch;letter-spacing:-.01em}
+
+/* ---------- подвал ---------- */
+.end{margin-top:clamp(100px,14vw,200px);background:var(--ink);color:var(--paper);padding:clamp(56px,8vw,110px) 0 40px}
+.end .k{color:#a39b8d}
+.end .big{display:block;font-family:var(--serif);font-weight:500;font-size:clamp(40px,8.4vw,128px);line-height:.95;letter-spacing:-.03em;margin:18px 0 40px;word-break:break-word}
+.end .big:hover{color:var(--amber)}
+.end .btn{background:var(--paper);color:var(--ink)}
+.end .btn:hover{background:#fff}
+.end .foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid rgba(238,234,226,.18);margin-top:70px;padding-top:14px;color:#a39b8d}
+
+/* ---------- появление при прокрутке ---------- */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{opacity:1;transform:none;transition:none}.btn .dot{animation:none}figure:hover .frame img{transform:none}}
+.no-js .rv{opacity:1;transform:none}
+</style>
+</head>
+<body class="no-js">
+
+<header class="bar">
+  <div class="wrap">
+    <a class="name" href="#top">Юрий Фролов</a>
+    <nav class="mono">
+      <a href="#pulse">Пульс</a><a href="#pepel">Пепел</a><a href="#foundsound">Foundsound</a><a href="#install">Инсталляции</a><a href="#music">Музыка</a>
+    </nav>
+    <a class="mail mono ulink" href="mailto:gunterhouse@gmail.com">Написать</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ОБЛОЖКА -->
+<section class="cover wrap">
+  <div class="meta mono">
+    <div><b>Игры</b>Геймдизайн, нарратив</div>
+    <div><b>Музыка</b>Композиция, звук</div>
+    <div><b>Медиа</b>Инсталляции, видео</div>
+    <div><b>Контакт</b><a class="ulink" href="mailto:gunterhouse@gmail.com">gunterhouse@gmail.com</a></div>
+  </div>
+  <h1>Юрий<br><em>Фролов</em></h1>
+  <div class="row">
+    <p class="lede">Геймдизайнер, композитор, медиахудожник. Делаю <em>карточные</em> и <em>экшен-игры</em>, интерактивные инсталляции и музыку.</p>
+    <div class="cta">
+      <a class="btn" href="https://staiki-sop.github.io/pulse_the_card_game_web_build/"><span class="dot"></span>Играть в «Пульс» <span class="arrow">↗</span></a>
+    </div>
+  </div>
+  <div class="diptych rv">
+    <figure class="d-main">
+      <div class="frame"><img src="assets/pepel/city.webp" alt="«Пепел» — ночной город в изометрии, изображение собрано из ASCII-символов" width="1440" height="900"></div>
+      <figcaption class="mono"><span class="t">«Пепел»</span><span>Кадр из игры</span></figcaption>
+    </figure>
+    <figure class="d-side">
+      <div class="frame"><img src="assets/pulse/mobile.webp" alt="«Пульс: Карты Очага» — бой на телефоне" width="720" height="1560"></div>
+      <figcaption class="mono"><span class="t">«Пульс»</span><span>Телефон</span></figcaption>
+    </figure>
+  </div>
+
+  <!-- ОГЛАВЛЕНИЕ -->
+  <nav class="toc rv" aria-label="Работы">
+    <h2>Содержание</h2>
+    <ol>
+      <li><a href="#pulse"><span class="mono mute">01</span><span class="ti">Пульс: Карты Очага</span><span class="ty">Карточный рогалик</span><span class="yr mono mute">Godot</span><span class="arrow">↘</span></a></li>
+      <li><a href="#pepel"><span class="mono mute">02</span><span class="ti">Пепел</span><span class="ty">Изометрический ASCII-экшен</span><span class="yr mono mute">Godot</span><span class="arrow">↘</span></a></li>
+      <li><a href="#foundsound"><span class="mono mute">03</span><span class="ti">Foundsound</span><span class="ty">Игра о звуке и памяти</span><span class="yr mono mute">2024</span><span class="arrow">↘</span></a></li>
+      <li><a href="#install"><span class="mono mute">04</span><span class="ti">Инсталляции</span><span class="ty">SMENA, «Каменный сад», «Бюро ложной памяти»</span><span class="yr mono mute">2024</span><span class="arrow">↘</span></a></li>
+      <li><a href="#dreams"><span class="mono mute">05</span><span class="ti">Digital dreams</span><span class="ty">Машинима</span><span class="yr mono mute">2024</span><span class="arrow">↘</span></a></li>
+      <li><a href="#music"><span class="mono mute">06</span><span class="ti">Музыка</span><span class="ty">Kenneth-9, электроакустика</span><span class="yr mono mute">2020–23</span><span class="arrow">↘</span></a></li>
+    </ol>
+  </nav>
+</section>
+
+<div class="wrap">
+
+<!-- 01 ПУЛЬС -->
+<article class="proj" id="pulse">
+  <div class="side rv">
+    <div class="no mono"><span>01</span><span class="mute">Игра</span></div>
+    <h3>Пульс:<br><em>Карты Очага</em></h3>
+    <p>Карточный рогалик о памяти, времени и выборе принадлежности. Бой идёт на трёх полосах, противник заранее показывает свой ход. Между боями события, награды, магазин и истории в духе Reigns.</p>
+    <dl class="specs">
+      <div><dt>Жанр</dt><dd>Карточный рогалик</dd></div>
+      <div><dt>Мир</dt><dd>Восемь округов, три стороны со своими колодами, 202 карты</dd></div>
+      <div><dt>Движок</dt><dd>Godot</dd></div>
+      <div><dt>Платформы</dt><dd>Браузер, Windows, macOS, iOS, Android</dd></div>
+      <div><dt>Роль</dt><dd>Автор: геймдизайн, баланс, тексты, музыка</dd></div>
+    </dl>
+    <div class="go">
+      <a class="ulink" href="https://staiki-sop.github.io/pulse_the_card_game_web_build/">Играть в браузере <span class="arrow">↗</span></a>
+      <a class="ulink" id="dossier" href="assets/pulse-dossier.pdf">Дизайн-досье, PDF <span class="arrow">↗</span></a>
+    </div>
+  </div>
+  <div class="plates">
+    <figure class="rv"><div class="frame"><img src="assets/pulse/battle.webp" alt="«Пульс» — бой на трёх полосах: карты Совета сверху, карты игрока снизу, рука внизу" width="1600" height="900" loading="lazy"></div>
+      <figcaption class="mono"><span class="t">Бой на трёх полосах</span><span>План противника виден заранее</span></figcaption></figure>
+    <figure class="p7 rv"><div class="frame"><img src="assets/pulse/map.webp" alt="«Пульс» — карта Ижморского края" width="1600" height="900" loading="lazy"></div>
+      <figcaption class="mono"><span class="t">Свой путь</span><span>Карта края</span></figcaption></figure>
+    <figure class="p5 off rv"><div class="frame"><img src="assets/pulse/ball.webp" alt="«Пульс» — история «Бал в Ярмороле»: карточка с выбором и две шкалы" width="1600" height="900" loading="lazy"></div>
+      <figcaption class="mono"><span class="t">«Бал в Ярмороле»</span><span>История</span></figcaption></figure>
+    <figure class="rv"><div class="frame"><img src="assets/pulse/collection.webp" alt="«Пульс» — экран коллекции карт" width="1600" height="900" loading="lazy"></div>
+      <figcaption class="mono"><span class="t">Коллекция</span><span>202 карты</span></figcaption></figure>
+    <figure class="p6 rv"><div class="frame"><img src="assets/pulse/files.webp" alt="«Пульс» — режим «Поход полка»: выбор троих бойцов из личных дел" width="1600" height="900" loading="lazy"></div>
+      <figcaption class="mono"><span class="t">Поход полка · личные дела</span><span>В разработке</span></figcaption></figure>
+    <figure class="p6 off rv"><div class="frame"><img src="assets/pulse/sector.webp" alt="«Пульс» — режим «Поход полка»: карта сектора" width="1600" height="900" loading="lazy"></div>
+      <figcaption class="mono"><span class="t">Поход полка · карта сектора</span><span>В разработке</span></figcaption></figure>
+  </div>
+</article>
+
+<!-- 02 ПЕПЕЛ -->
+<article class="proj" id="pepel">
+  <div class="side rv">
+    <div class="no mono"><span>02</span><span class="mute">Игра</span></div>
+    <h3>Пепел</h3>
+    <p>Изометрическая 3D-игра, в которой изображение превращается в ASCII-символы, а боевые приёмы рисуются мышью. Сюжетный пролог и первая глава с боссом.</p>
+    <dl class="specs">
+      <div><dt>Жанр</dt><dd>Изометрический экшен с упором на нарратив</dd></div>
+      <div><dt>Бой</dt><dd>Сигилы мышью, связки, парирование, выносливость</dd></div>
+      <div><dt>Движок</dt><dd>Godot 4</dd></div>
+      <div><dt>Платформы</dt><dd>Windows, macOS — сборки по запросу</dd></div>
+      <div><dt>Роль</dt><dd>Автор: геймдизайн, нарратив</dd></div>
+    </dl>
+  </div>
+  <div class="plates">
+    <figure class="rv">
+      <div class="frame"><video controls preload="metadata" playsinline poster="assets/pepel/poster.jpg"><source src="assets/pepel/pepel.mp4" type="video/mp4" onerror="this.closest('figure').hidden=true"></video></div>
+      <figcaption class="mono"><span class="t">Геймплей</span><span>Видео</span></figcaption>
+    </figure>
+    <figure class="rv"><div class="frame"><img src="assets/pepel/arches.webp" alt="«Пепел» — героиня под арками ночной площади" width="1440" height="900" loading="lazy"></div>
+      <figcaption class="mono"><span class="t">3D-сцена, переведённая в ASCII-символы</span><span>Кадр из игры</span></figcaption></figure>
+    <figure class="p7 rv"><div class="frame"><img src="assets/pepel/garden.webp" alt="«Пепел» — заросший сад с водоёмами" width="1440" height="900" loading="lazy"></div></figure>
+    <figure class="p5 off rv"><div class="frame"><img src="assets/pepel/autumn.webp" alt="«Пепел» — осенний лес и бетонная вышка" width="1440" height="900" loading="lazy"></div></figure>
+    <figure class="p8 rv"><div class="frame"><img src="assets/pepel/plant.webp" alt="«Пепел» — промышленная зона с трубой" width="1440" height="900" loading="lazy"></div></figure>
+  </div>
+</article>
+
+<!-- 03 FOUNDSOUND -->
+<article class="proj" id="foundsound">
+  <div class="side rv">
+    <div class="no mono"><span>03</span><span class="mute">Игра · 2024</span></div>
+    <h3><em>Foundsound</em></h3>
+    <p>Игрок проходит разные виртуальные пространства и собирает полевые записи. Из них складывается звуковая карта пути: звук становится способом исследовать место и память.</p>
+    <dl class="specs">
+      <div><dt>Жанр</dt><dd>Исследование, звук</dd></div>
+      <div><dt>Механика</dt><dd>Сбор полевых записей</dd></div>
+      <div><dt>Движок</dt><dd>Unity</dd></div>
+    </dl>
+  </div>
+  <div class="plates">
+    <figure class="rv"><div class="frame"><img src="assets/works/foundsound-1.jpg" alt="Foundsound — тёмная спальня"></div></figure>
+    <figure class="p7 rv"><div class="frame"><img src="assets/works/foundsound-2.jpg" alt="Foundsound — героиня с рюкзаком в ночном лесу"></div></figure>
+    <figure class="p5 off rv"><div class="frame"><img src="assets/works/foundsound-3.jpg" alt="Foundsound — ночная улица с магазином"></div></figure>
+  </div>
+</article>
+
+<section class="interlude rv" aria-hidden="true">
+  <p>Другие работы: инсталляции, машинима, музыка.</p>
+</section>
+
+<!-- 04 ИНСТАЛЛЯЦИИ -->
+<article class="proj" id="install">
+  <div class="side rv">
+    <div class="no mono"><span>04</span><span class="mute">Инсталляции · 2024</span></div>
+    <h3>Инстал&shy;ляции</h3>
+    <p>Работы, которые отвечают зрителю: звук, электроника и датчики движения. Показаны на выставках в Петрозаводске и Санкт-Петербурге.</p>
+    <dl class="specs">
+      <div><dt>Показы</dt><dd>Новая сцена Александринского театра, Карельский медиафорум, Музей индустриальной истории Петрозаводска</dd></div>
+    </dl>
+  </div>
+  <div class="plates">
+    <figure class="p7 rv"><div class="frame"><img src="assets/works/smena.jpg" alt="SMENA — красный телефонный коммутатор"></div>
+      <figcaption class="mono"><span class="t">SMENA</span><span>Медиаинсталляция</span></figcaption>
+      <p style="margin:8px 0 0;font-size:14px;color:var(--soft);max-width:46ch">Реконструированный телефонный коммутатор как сэмплер звуков, записанных на судостроительном заводе «Авангард».</p></figure>
+    <figure class="p5 off rv"><div class="frame"><img src="assets/works/stone-garden.jpg" alt="«Каменный сад» — камень на сетке с датчиком"></div>
+      <figcaption class="mono"><span class="t">«Каменный сад»</span><span>Интерактив</span></figcaption>
+      <p style="margin:8px 0 0;font-size:14px;color:var(--soft)">Движения зрителя меняют среду инсталляции.</p></figure>
+    <figure class="p8 rv"><div class="frame"><img src="assets/works/bureau.jpg" alt="«Бюро ложной памяти» — афиша проекта VAC Sreda"></div>
+      <figcaption class="mono"><span class="t">«Бюро ложной памяти»</span><a class="ulink" href="https://web.archive.org/web/20240409174104/https:/sreda.v-a-c.org/ru">VAC Sreda ↗</a></figcaption>
+      <p style="margin:8px 0 0;font-size:14px;color:var(--soft)">Музыка и видео.</p></figure>
+  </div>
+</article>
+
+<!-- 05 DIGITAL DREAMS -->
+<article class="proj" id="dreams">
+  <div class="side rv">
+    <div class="no mono"><span>05</span><span class="mute">Машинима · 2024</span></div>
+    <h3><em>Digital dreams</em></h3>
+    <p>Звуко-визуальная работа о границе сна и памяти. Искажённые кадры игровых миров похожи на обрывки детских воспоминаний.</p>
+    <div class="go">
+      <a class="ulink" href="https://youtu.be/GVVJ4nDtYTA">Смотреть, часть 1 <span class="arrow">↗</span></a>
+      <a class="ulink" href="https://youtu.be/BGdehIcL7xo">Смотреть, часть 2 <span class="arrow">↗</span></a>
+    </div>
+  </div>
+  <div class="plates">
+    <figure class="p6 rv"><div class="frame"><img src="assets/works/dreams-1.jpg" alt="Digital dreams — искажённый кадр: плюшевый кролик в комнате"></div></figure>
+    <figure class="p6 off rv"><div class="frame"><img src="assets/works/dreams-2.jpg" alt="Digital dreams — текст на голубых осколках"></div></figure>
+  </div>
+</article>
+
+<!-- 06 МУЗЫКА -->
+<article class="proj" id="music">
+  <div class="side rv">
+    <div class="no mono"><span>06</span><span class="mute">Музыка · 2020–2023</span></div>
+    <h3>Музыка</h3>
+    <p>Альбомы под псевдонимом Kenneth-9: саундскейпы, dark ambient, синтезаторы и полевые записи. Концерты электроакустической музыки в Петрозаводской консерватории.</p>
+    <dl class="specs">
+      <div><dt>Альбомы</dt><dd>Song for A (2020), A.M.A.E. (2021)</dd></div>
+      <div><dt>Концерты</dt><dd>Петрозаводская консерватория, 2022–2023</dd></div>
+    </dl>
+  </div>
+  <div class="plates">
+    <figure class="p6 rv"><div class="frame"><img src="assets/works/song-for-a.jpg" alt="Обложка альбома Song for A"></div>
+      <figcaption class="mono"><span class="t">Song for A · 2020</span><a class="ulink" href="https://kenneth-9.bandcamp.com/album/song-for-a">Bandcamp ↗</a></figcaption></figure>
+    <figure class="p6 off rv"><div class="frame" style="background:#fff"><img src="assets/works/ame.jpg" alt="Обложка альбома A.M.A.E."></div>
+      <figcaption class="mono"><span class="t">A.M.A.E. · 2021</span><a class="ulink" href="https://kenneth-9.bandcamp.com/album/a-m-a-e">Bandcamp ↗</a></figcaption></figure>
+    <figure class="p5 rv"><div class="frame" style="background:#fff"><img src="assets/works/connect.jpg" alt="Афиша концерта электроакустической музыки CONNECT"></div>
+      <figcaption class="mono"><span class="t">CONNECT</span><span>Концерт</span></figcaption></figure>
+  </div>
+</article>
+
+</div>
+
+<!-- ПОДВАЛ -->
+<footer class="end" id="contact">
+  <div class="wrap">
+    <span class="mono k">Связаться</span>
+    <a class="big" href="mailto:gunterhouse@gmail.com">gunterhouse<wbr>@gmail.com</a>
+    <a class="btn" href="https://staiki-sop.github.io/pulse_the_card_game_web_build/"><span class="dot"></span>Играть в «Пульс» <span class="arrow">↗</span></a>
+    <div class="foot mono"><span>Юрий Фролов</span><span>Геймдизайн · композиция · медиа</span></div>
+  </div>
+</footer>
+
+</main>
+
+<script>
+document.body.classList.remove('no-js');
+// плавное появление
+(function(){
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px',threshold:.06});
+  els.forEach(function(e){io.observe(e)});
+})();
+// ссылка на досье только если файл есть
+fetch('assets/pulse-dossier.pdf',{method:'HEAD'}).then(function(r){if(!r.ok)throw 0}).catch(function(){var d=document.getElementById('dossier');if(d)d.remove()});
+// раздел без единой картинки сжимается до текста
+document.querySelectorAll('.plates').forEach(function(p){
+  setTimeout(function(){if(!p.querySelector('figure:not([hidden])')){p.remove()}},1500);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+{
+  "htmlBytes": 15553,
+  "results": [
+    {
+      "width": 375,
+      "passed": true,
+      "viewport": 375,
+      "scrollWidth": 375,
+      "links": [
+        "#projects",
+        "https://staiki-sop.github.io/pulse_the_card_game_web_build/",
+        "https://staiki-sop.github.io/pulse_the_card_game_web_build/",
+        "mailto:gunterhouse@gmail.com"
+      ],
+      "externalDependencies": 0,
+      "requests": [
+        "http://127.0.0.1:8765/"
+      ],
+      "externalRequests": [],
+      "failures": [],
+      "errors": [],
+      "reducedMotionAnimations": 0
+    },
+    {
+      "width": 768,
+      "passed": true,
+      "viewport": 768,
+      "scrollWidth": 768,
+      "links": [
+        "#projects",
+        "https://staiki-sop.github.io/pulse_the_card_game_web_build/",
+        "https://staiki-sop.github.io/pulse_the_card_game_web_build/",
+        "mailto:gunterhouse@gmail.com"
+      ],
+      "externalDependencies": 0,
+      "requests": [
+        "http://127.0.0.1:8765/"
+      ],
+      "externalRequests": [],
+      "failures": [],
+      "errors": [],
+      "reducedMotionAnimations": 0
+    },
+    {
+      "width": 1280,
+      "passed": true,
+      "viewport": 1280,
+      "scrollWidth": 1280,
+      "links": [
+        "#projects",
+        "https://staiki-sop.github.io/pulse_the_card_game_web_build/",
+        "https://staiki-sop.github.io/pulse_the_card_game_web_build/",
+        "mailto:gunterhouse@gmail.com"
+      ],
+      "externalDependencies": 0,
+      "requests": [
+        "http://127.0.0.1:8765/"
+      ],
+      "externalRequests": [],
+      "failures": [],
+      "errors": [],
+      "reducedMotionAnimations": 0
+    }
+  ]
+}
